@@ -1,12 +1,15 @@
 {
-  "name": "line-oa-wetmarket",
+  "name": "line-oa",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://melodymarana.github.io/Line-OA",
   "engines": {
     "node": "16.x.x",
     "npm": "8.x.x"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
@@ -51,6 +54,7 @@
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-react-hooks": "4.5.0",
     "eslint-plugin-testing-library": "5.5.1",
+    "gh-pages": "^4.0.0",
     "husky": "8.0.1",
     "is-ci": "3.0.1",
     "prettier": "2.6.2",
