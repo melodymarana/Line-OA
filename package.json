@@ -1,0 +1,72 @@
+{
+  "name": "line-oa-wetmarket",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x.x",
+    "npm": "8.x.x"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier \"src/**/*.{js,jsx,ts,tsx,css,scss}\" --write",
+    "compile": "tsc --noEmit",
+    "preview": "vite preview",
+    "prepare": "is-ci || husky install"
+  },
+  "dependencies": {
+    "@bugsnag/js": "7.16.5",
+    "@bugsnag/plugin-react": "7.16.5",
+    "@emotion/react": "11.9.0",
+    "@emotion/styled": "11.8.1",
+    "@fontsource/kanit": "^4.5.8",
+    "@line/liff": "2.20.1",
+    "@mui/lab": "^5.0.0-alpha.84",
+    "@mui/material": "^5.8.1",
+    "@reduxjs/toolkit": "1.8.2",
+    "@splidejs/react-splide": "^0.7.7",
+    "@splidejs/splide": "^4.0.6",
+    "@vitejs/plugin-legacy": "1.8.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-redux": "8.0.2",
+    "react-router-dom": "6.3.0"
+  },
+  "devDependencies": {
+    "@bugsnag/source-maps": "2.3.1",
+    "@types/node": "16.11.36",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.5",
+    "@typescript-eslint/eslint-plugin": "5.26.0",
+    "@typescript-eslint/parser": "5.26.0",
+    "@vitejs/plugin-react": "1.3.2",
+    "eslint": "8.16.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.30.0",
+    "eslint-plugin-react-hooks": "4.5.0",
+    "eslint-plugin-testing-library": "5.5.1",
+    "husky": "8.0.1",
+    "is-ci": "3.0.1",
+    "prettier": "2.6.2",
+    "typescript": "4.7.2",
+    "vite": "2.9.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
